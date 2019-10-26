@@ -1,0 +1,523 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Righteous', cursive;
+}
+
+/********************************* start section navbar **********************************/
+
+nav{
+    width: 19%;
+    background: black;
+    height: 100vh;
+    float: left;
+    position: fixed;
+    top:0;
+    left: 0 ;    
+    overflow-x: hidden;
+
+}
+
+.profil-name{
+    font-size: 35px;
+    color:#fff;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top:20px; 
+}
+
+.img-profil{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    margin:20px 25%; 
+    cursor: pointer;
+
+}
+.img-profil:hover{
+    animation: rotate 2s;
+    border: 4px solid #216665;
+}
+@keyframes rotate {
+    from {
+      transform: rotate(0deg); }
+    to {
+      transform: rotate(1800deg); } }
+
+ul{
+    list-style-type: none;
+    padding-left: 30px; 
+}
+
+ul li{
+    display: block;
+}
+
+ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 3;
+    cursor: pointer;
+    width: 0;
+    transition: border-bottom 1s;
+}
+
+ul li a:hover{
+    border-bottom: 5px #216665 solid;
+    transition: 0.7s ease;
+    width: 100%;
+}
+
+.reseau-social{
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+}
+
+.reseau-social .fa{
+    font-size: 15px;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 50%;
+    transition:0.5s ease-in-out;
+}
+.reseau-social .fa:hover{
+    transform: scale(1.5,1.5);
+    color: #216665;
+    border: 2px solid #216665;
+    transform:scale(1.5,1.5);
+    
+}
+.all-rights{
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    padding-top: 30px;
+}
+/*start changing color*/
+
+.firstColor , .secondColor, .thirdColor {
+    display: inline-block;
+    border-radius: 50%;
+    background-color:#c30e2e;
+    height: 30px;
+    width: 30px;
+    margin-top: 20px;
+    margin-left: 40px;
+    cursor: pointer;
+    transition:0.9s ease-in-out;
+
+}
+.secondColor{
+    background-color: #00D8FF;
+}
+.thirdColor {
+    background-color: #216665;
+}
+.firstColor:hover , .secondColor:hover, .thirdColor:hover {
+    transform:scale(1.5,1.5);
+}
+
+/*end changing color*/
+/********************************* end section navbar **********************************/
+
+/********************************* start section home *********************************/
+
+.home{
+    background: url('../img/bg-section.jpg');
+    background-position:center;
+    background-size:  cover;
+    height: 100vh;
+    width: 81% ;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    margin-left: 19%;
+}
+
+.home h2{
+    font-size: 81px;
+    text-transform: uppercase;
+    color: #fff;
+    position: absolute;
+    /*top: 100px;
+    left: 700px;*/
+    text-shadow: 7px 8px 10px #a2a6a7;
+    transition-duration: 3s;
+}
+
+.home button{
+    text-transform: uppercase;
+    position: absolute;
+    /*top: 480px;
+    left: 800px;*/
+    margin: -90px 0px;
+    padding: 15px;
+    font-size: 25px;
+    background-color: #216665;
+    opacity: 0.8;
+    border-radius: 12px;
+    cursor: pointer;
+    color: #fff;
+    outline: none;
+    width: 170px;   
+}
+
+.home button:hover{
+    background-color: #216665;
+    opacity: 1;
+    transform: rotateY(360deg);
+    transition-duration: 3s;
+}
+
+/*services */
+
+.services{
+    margin-left: 19%;
+    display: flex;
+    width: 81%;
+
+}
+.front-end{
+    background-color: #216665;
+    color: white;
+    text-align: justify;
+    line-height:2; 
+    width: 27%;
+    text-align: center;
+    min-height: 450px;
+    margin: 50px 40px;
+    padding: 20px;
+    padding-top: 100px;
+}
+
+.front-end:hover{
+    transform: scale(1.1,1.1);
+    background-color: #fff;
+    color: #216665;
+    box-shadow: 7px 7px 10px gray; 
+    transition-duration: 2s;
+}
+
+
+/* about me */
+
+.about-me{
+    margin-left: 19%;
+    margin-top: 50px;
+}
+
+.about-me h1{
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.about-me p{
+    width: 80%;
+    text-align: justify;
+    margin-left: 10%;
+    margin-bottom: 50px;
+    font-size: 25px;
+} 
+
+/* section portfolio*/
+
+/* start creating show and hide js class */
+
+
+/* end creating show and hide js class */
+
+
+.portfolio{
+    margin-left: 19%;
+    margin-top: 50px;
+}
+
+.portfolio .portfolio-work{
+    margin-left: 10%;
+
+}
+.portfolio .active,.portfolio .btn:hover {
+    color: #fff;
+    background-color: #216665;
+  }
+
+.portfolio button{
+    padding: 13px;
+    margin: 0 10px;
+    border-radius:20px;
+    border: 1px solid #216665;
+    color: #216665;
+    background-color: transparent;
+    outline: none; 
+    font-size: 16px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.portfolio button:hover{
+    color: #fff;
+    background-color: #216665;
+}
+
+.portfolio button:visited{
+    color: #fff;
+    background-color: #216665;
+}
+
+/* start psd to html work*/
+
+.psdtohtml-work{
+    display: flex;
+    margin-left : 10%;
+    margin-top : 50px;
+}
+
+.portfolio .psd-work1, .portfolio .psd-work2 ,.portfolio .psd-work3{
+    width: 25%;
+    height: 150px;
+    background-color:rgb(189, 88, 88); 
+    margin: 10px 30px;
+}
+.portfolio .psd-work1{
+    background: url('../img/psdtohtml1.png');
+    background-position: center;
+    background-size: cover;
+    width: 25%;
+    height: 150px;  
+    transition: width 1s;
+}
+.portfolio .psd-work1:hover{
+opacity: 0.7;
+}
+
+
+/*end psd to html work*/
+/* start react work */
+.react-work{
+    display: flex;
+    margin-left : 10%;
+    margin-top : 50px;
+}
+
+.portfolio .react-work1, .portfolio .react-work2 ,.portfolio .react-work3{
+    width: 25%;
+    height: 150px;
+    background-color:rgb(88, 132, 189); 
+    margin: 10px 30px;
+}
+.portfolio .react-work1{
+        background: url('../img/react1.png');
+        background-position: center;
+        background-size: cover;
+        width: 25%;
+        height: 150px;  
+        transition: width 1s;
+}
+.portfolio .react-work1:hover{
+    opacity: 0.7;
+}
+
+/*end react work*/
+/*start vue work*/
+
+.vue-work{
+    display: flex;
+    margin-left : 10%;
+    margin-top : 50px;
+}
+
+.portfolio .vue-work1, .portfolio .vue-work2 ,.portfolio .vue-work3{
+    width: 25%;
+    height: 150px;
+    background:#216665;
+    background-position: center;
+    background-size: cover;
+    margin: 10px 30px;
+}
+
+.portfolio .vue-work1{
+    background: url('../img/vue1.png');
+    background-position: center;
+    background-size: cover;
+    width: 25%;
+    height: 150px;  
+    transition: width 1s;
+
+}
+.portfolio .vue-work1:hover{
+    opacity: 0.5;
+}
+
+/*end vue work*/
+
+/*start angular work*/
+
+.angular-work{
+    display: flex;
+    margin-left : 10%;
+    margin-top : 50px;
+}
+
+.portfolio .angular-work1, .portfolio .angular-work2 ,.portfolio .angular-work3{
+    width: 25%;
+    height: 150px;
+    background-color:rgb(226, 95, 19); 
+    margin: 10px 30px;
+}
+
+.portfolio .angular-work1{
+    background: url('../img/angular1.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 25%;
+    height: 150px;  
+    transition: width 1s;
+
+}
+.portfolio .angular-work1:hover{
+    opacity: 0.5;
+}
+
+/*end angular work*/
+
+/*start bootstrap & sass work*/
+
+.bootstrap-sass-work{
+    display: flex;
+    margin-left : 10%;
+    margin-top : 50px;
+}
+
+.portfolio .bootstrap-sass-work1, .portfolio .bootstrap-sass-work2 ,.portfolio .bootstrap-sass-work3{
+    width: 25%;
+    height: 150px;
+    background-color:rgb(226, 95, 19); 
+    margin: 10px 30px;
+}
+
+.portfolio .bootstrap-sass-work1{
+    background: url('../img/bg-section.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 25%;
+    height: 150px;  
+    transition: width 1s;
+
+}
+.portfolio .bootstrap-sass-work1:hover{
+    opacity: 0.5;
+}
+
+/*end vue work*/
+
+/* section concat me */
+
+.contact-me{
+    background: url('../img/contact-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height:auto;
+    margin-left: 19%;
+    margin-top: 50px;
+    padding-bottom: 80px;
+}
+
+.contact-me h1{
+    font-size: 60px;
+    text-align: center;
+    padding-top: 100px;
+}   
+
+.contact-me input[type=text],.contact-me input[type=email] {
+    width: 80%; 
+    margin-left: 10%;
+    margin-top: 30px;
+    padding: 10px;
+    font-size: 20px;    
+
+}
+
+.contact-me input[type=submit]{
+    width: 80%; 
+    margin-left: 10%;
+    margin-top: 30px;
+    padding: 8px;
+    font-size: 20px;
+    background-color: #216665;
+    color: #fff;
+    cursor: pointer;
+    outline: none;  
+}
+
+.contact-me textarea{
+    width: 80%; 
+    height: 150px; 
+    margin-left: 10%;
+    margin-top: 30px;
+    padding: 8px;
+    font-size: 20px;
+}
+
+
+/*start bottom-icon*/
+.bottom-icon .fa{
+    position: fixed;
+    bottom: 10px;
+    font-size: 35px;
+    right: 10px;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    padding: 10px;
+    color: #fff;
+    background-color: #216665;
+    cursor: pointer;
+}
+
+.bottom-icon .fa:hover{
+    color: #216665;
+    background-color: #fff;
+}
+
+
+/*end bottom-icon*/
+
+
+
+/*global color*/
+.golobalColor{
+    background-color: #00D8FF; 
+}
+
+
+/************************************responsive section*************************************************/
+
+
+@media only screen and (max-width: 1150px) {
+    
+    body{
+        margin: 0;
+        padding: 0;
+        background-color: red;
+        width: 100%;
+    }
+    .navbar-nav{
+        display: none;
+    }
+
+    .home{
+        background: url('../img/bg-section.jpg');
+        background-position:center;
+        background-size:  cover;
+        height: 100vh;
+        min-width: 100%;    
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+  }
